@@ -1,1 +1,96 @@
 
+    <!-- ==========================================
+         SPRINT 3: TEMARIO Y TARJETAS DE ACCIÓN
+         ========================================== -->
+    <section id="temario">
+        <h2>Temario del semestre</h2>
+        <p class="subtitulo">Conoce los temas que aprenderás durante el semestre</p>
+        
+        <!-- Grid con las 9 tarjetas del temario -->
+        <div class="contenedor-temario">
+            <div class="tema">
+                <img src="src/images/router.png" alt="Icono Router">
+                <div class="tema-texto">
+                    <h3>Conceptos Básicos de Redes</h3>
+                    <p>Introducción a los principios fundamentales de la comunicación de datos.</p>
+                </div>
+            </div>
+            <div class="tema">
+                <img src="src/images/direccionamiento ip.png" alt="Icono IP">
+                <div class="tema-texto">
+                    <h3>Direccionamiento IPV4</h3>
+                    <p>Estructura, clases y segmentación de redes mediante subredes.</p>
+                </div>
+            </div>
+            <div class="tema">
+                <img src="src/images/protocolos.png" alt="Icono Protocolos">
+                <div class="tema-texto">
+                    <h3>Protocolos IP, ICMP, TCP y UDP</h3>
+                    <p>Análisis de los mecanismos de transporte y control de flujo de datos.</p>
+                </div>
+            </div>
+            <div class="tema">
+                <img src="src/images/ip.png" alt="Icono OSI">
+                <div class="tema-texto">
+                    <h3>Modelo OSI</h3>
+                    <p>Estudio de las 7 capas y su funcionamiento en la transmisión de datos.</p>
+                </div>
+            </div>
+            <div class="tema">
+                <img src="src/images/enrutamiento dinamico.png" alt="Icono Enrutamiento">
+                <div class="tema-texto">
+                    <h3>Enrutamiento Dinámico</h3>
+                    <p>Protocolos, métricas y toma de decisiones en el envío de paquetes.</p>
+                </div>
+            </div>
+            <div class="tema">
+                <img src="src/images/aplicacion.png.png" alt="Icono Aplicación">
+                <div class="tema-texto">
+                    <h3>Capa Aplicación</h3>
+                    <p>Interfaz entre el usuario y la red: HTTP, DNS, DHCP y servicios finales.</p>
+                </div>
+            </div>
+            <div class="tema">
+                <img src="src/images/topologia.png" alt="Icono Topología">
+                <div class="tema-texto">
+                    <h3>Topologías y Medios TX</h3>
+                    <p>Configuración física, lógica y medios de transmisión cableados e inalámbricos.</p>
+                </div>
+            </div>
+            <div class="tema">
+                <img src="src/images/arp.png" alt="Icono ARP">
+                <div class="tema-texto">
+                    <h3>Protocolo ARP, RARP</h3>
+                    <p>Resolución de direcciones MAC a partir de direcciones IP conocidas.</p>
+                </div>
+            </div>
+            <div class="tema">
+                <img src="src/images/cableado.png" alt="Icono Cableado">
+                <div class="tema-texto">
+                    <h3>Cableado Estructurado</h3>
+                    <p>Normativas, estándares y componentes físicos para la conectividad LAN.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjetas inferiores de Demo y Foro -->
+        <section class="top-cards">
+            <div class="card">
+                <div class="card__content">
+                    <h3>¿Listo para aprender con nosotros?</h3>
+                    <p class="card-text">Solicitar Demo</p>
+                    <button class="btn-orange">DEMO</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__content">
+                    <h3>Foro y preguntas frecuentes</h3>
+                    <p class="card-text">Resuelve tus dudas y comparte con la comunidad.</p>
+                    <button class="btn-orange">PREGUNTAR</button>
+                </div>
+                <!-- Div vacío para cargar la imagen desde CSS -->
+                <div class="card__image"></div>
+            </div>
+        </section>
+    </section>
