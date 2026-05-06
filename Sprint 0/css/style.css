@@ -1,1 +1,36 @@
+/* =========================================================
+   VARIABLES GLOBALES: Guardo los colores exactos del diseño 
+   para reusarlos y cambiar todo desde un solo lugar.
+   ========================================================= */
+:root {
+    --header-bg: #FFC107;
+    --header-text-blue: #163E82;
+    --intro-bg: #163E82;
+    --intro-btn: #FF9800;
+    --fondo-quienes: #F4F9FF; 
+    --fondo-temario: #E9F3FE; 
+    --celeste-temario: #A8D1F0;
+    --fondo-tarjetas: #CDE3F7; 
+}
 
+/* Limpio los márgenes que el navegador trae por defecto */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo del Body en blanco para que se note la línea del borde calculada */
+body, html {
+    background-color: #FFFFFF; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* 
+  TRUCO DEL BORDE: Con esto le digo a las secciones que ocupen el 100%
+  menos 20px (10px a cada lado). Como están centradas, dejan esa línea blanca fina.
+*/
+main, #quienes-somos, #temario, footer {
+    width: calc(100% - 20px); 
+    margin: 0 auto; 
+}
