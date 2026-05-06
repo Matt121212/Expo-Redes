@@ -1,1 +1,148 @@
+/* =========================================================
+   SPRINT 4: FOOTER (PIE DE PÁGINA)
+   ========================================================= */
+footer {
+    background-color: var(--header-text-blue);
+    color: #FFFFFF;
+}
 
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Forzamos tipografía exacta para que no herede otros estilos */
+.titulo-footer {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 32px !important;
+    color: #FFFFFF !important; 
+    line-height: normal; 
+    letter-spacing: 0; 
+    margin: 0;
+}
+
+.footer-content {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+}
+
+/* Oculto el svg feo que venía por defecto en el HTML */
+.footer-box svg {
+    display: none; 
+}
+
+.footer-box > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-box img {
+    width: 45px; 
+    height: auto;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.footer-box p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF; 
+    margin: 0;
+}
+
+.footer-box .label {
+    font-weight: 600;
+}
+
+.footer-box .label::after {
+    content: ": ";
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #FFFFFF; 
+}
+
+
+/* =========================================================
+   RESPONSIVE (DISEÑO PARA TABLETS Y CELULARES)
+   ========================================================= */
+
+/* Vista para TABLET (Pantallas menores a 992px) */
+@media (max-width: 992px) {
+    /* El intro y el header necesitan menos espacio lateral */
+    #intro { gap: 20px; }
+    
+    /* El temario cambia de 3 a 2 columnas para que no se apriete */
+    .contenedor-temario {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Reduzco espacio del footer */
+    .footer-content { gap: 40px; }
+    .footer-top { padding: 40px 30px; }
+}
+
+/* Vista para CELULARES (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+    /* Ocultamos el menú nav en móviles para que no estorbe */
+    header nav ul { display: none; }
+
+    /* Intro: Imagen abajo, texto arriba centrado */
+    #intro {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .intro-texto {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-imagen {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    /* Quiénes somos y Temario: Todo a 1 sola columna */
+    .contenedor-quienes, .top-cards, .contenedor-temario {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Acomodo las tarjetas del foro en móvil para que la imagen no estorbe */
+    .card:nth-child(2) {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card__image { margin-left: 0; }
+    
+    /* Footer: Apilado verticalmente */
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
