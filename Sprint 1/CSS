@@ -1,1 +1,130 @@
+/* =========================================================
+   SPRINT 1: HEADER Y MAIN (PORTADA)
+   ========================================================= */
+   
+/* El header siempre toma el 100% de la pantalla */
+header {
+    background-color: var(--header-bg);
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 30px;
+}
+
+header nav svg {
+    width: 46px;
+    height: auto;
+    margin-right: 12px;
+}
+
+header nav h1 {
+    color: var(--header-text-blue);
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    margin-left: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--header-text-blue);
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+main {
+    background-color: var(--intro-bg);
+    position: relative;
+    padding-bottom: 70px; 
+}
+
+/* Genero la onda blanca en la parte inferior usando un seudoelemento ::after */
+main::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,60 C320,120 420,0 720,60 C1020,120 1120,0 1440,60 L1440,120 L0,120 Z" fill="%23F4F9FF"></path></svg>') no-repeat center bottom;
+    background-size: 100% 100%;
+}
+
+/* Contenedor del texto e imagen centrado verticalmente con Flexbox */
+#intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px 60px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.intro-texto {
+    flex: 1; 
+    max-width: 480px; 
+}
+
+.intro-texto h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.intro-texto p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn-ver-temario {
+    background-color: var(--intro-btn);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border: 2px solid #FFC107; 
+    border-radius: 4px;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.intro-imagen {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.intro-imagen img {
+    width: 100%;
+    max-width: 550px;
+    object-fit: contain;
+    filter: drop-shadow(0px 15px 20px rgba(0,0,0,0.2)); 
+}
 
