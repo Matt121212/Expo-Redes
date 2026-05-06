@@ -1,1 +1,43 @@
+  <!-- ==========================================
+         SPRINT 4: FOOTER (PIE DE PÁGINA)
+         ========================================== -->
+    <footer>
+        <div class="footer-top">
+            <h2 class="titulo-footer">Contáctanos</h2>
 
+            <div class="footer-content">
+                <!-- Información de Correo -->
+                <div class="footer-box">
+                    <!-- Ocultamos este SVG desde CSS para usar nuestra imagen -->
+                    <svg width="40" height="40" viewBox="0 0 70 70" fill="none">
+                        <path d="M8.75 20.4167L35 37.9167L61.25 20.4167" stroke-width="2"/>
+                    </svg>
+                    <div>
+                        <img src="./src/images/correo.png" alt="correo.png">
+                        <p class="label">Correo</p>
+                        <p>redes@epn.edu.ec</p>
+                    </div>
+                </div>
+
+                <!-- Información de Teléfono -->
+                <div class="footer-box">
+                    <svg width="40" height="40" viewBox="0 0 78 78" fill="none">
+                        <path d="M49.5625 8.9375H28.4375" stroke-width="1.5"/>
+                    </svg>
+                    <div>
+                        <img src="./src/images/telefono.png" alt="telefono.png">
+                        <p class="label">Teléfono</p>
+                        <p>0986952901</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© 2026 Curso Redes de Computadoras</p>
+        </div>
+    </footer>
+
+</body>
+</html>
