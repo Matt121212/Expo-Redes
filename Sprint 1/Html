@@ -1,1 +1,35 @@
+  <!-- ==========================================
+         SPRINT 1: ENCABEZADO Y PORTADA (MAIN)
+         ========================================== -->
+    <header>
+        <nav>
+            <!-- Logo SVG -->
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3333 15.5H51.6667V41.3333H10.3333M51.6667 46.5C53.0369 46.5 54.3511 45.9557 55.32 44.9867C56.289 44.0178 56.8333 42.7036 56.8333 41.3333V15.5C56.8333 14.1297 56.289 12.8156 55.32 11.8466C54.3511 10.8777 53.0369 10.3333 51.6667 10.3333H10.3333C7.46583 10.3333 5.16667 12.6325 5.16667 15.5V41.3333C5.16667 42.7036 5.71101 44.0178 6.67995 44.9867C7.64889 45.9557 8.96305 46.5 10.3333 46.5H0V51.6667H62V46.5H51.6667Z" fill="black"/>
+            </svg>
+            <h1>Curso Redes de Computadoras</h1>
+            
+            <!-- Menú de navegación -->
+            <ul>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="intro">
+            <!-- Textos principales de la portada -->
+            <div class="intro-texto">
+                <h2>Aprende redes de<br>computadoras</h2>
+                <p>Explora todos los temas, paso a paso, con recursos interactivos y personalizados.<br><br>Ya sea tu primera vez o estas reforzando conocimientos, aquí encontrarás todo lo que necesitas para dominar la asignatura.</p>
+                <button class="btn-ver-temario">VER TEMARIO</button>
+            </div>
+            
+            <!-- Imagen 3D de la laptop -->
+            <div class="intro-imagen">
+                <img src="./src/images/lapto.png" alt="Laptop Ilustrativa">
+            </div>
+        </section>
+    </main>
