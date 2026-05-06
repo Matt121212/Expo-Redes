@@ -1,1 +1,45 @@
+/* =========================================================
+   SPRINT 2: SECCIÓN QUIÉNES SOMOS
+   ========================================================= */
+#quienes-somos {
+    background-color: var(--fondo-quienes);
+    padding: 40px 30px;
+}
+
+/* Uso CSS Grid de 2 columnas para separar el texto y la imagen */
+.contenedor-quienes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.texto-quienes h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--header-text-blue);
+    margin-bottom: 20px;
+}
+
+.texto-quienes p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: var(--header-text-blue);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.imagen-quienes {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagen-quienes img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+}
 
