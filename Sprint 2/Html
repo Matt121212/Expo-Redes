@@ -1,1 +1,15 @@
-
+<!-- ==========================================
+         SPRINT 2: SECCIÓN QUIÉNES SOMOS
+         ========================================== -->
+    <section id="quienes-somos">
+        <div class="contenedor-quienes">
+            <div class="texto-quienes">
+                <h2>¿Quiénes somos?</h2>
+                <p>Somos una plataforma educativa que permite a los estudiantes consultar el temario completo de sus materias de forma clara y organizada, facilitando su aprendizaje y preparación académica.</p>
+                <p>Buscamos brindar una experiencia sencilla e intuitiva, donde el estudiante pueda explorar contenidos, reforzar conocimientos y avanzar a su propio ritmo.</p>
+            </div>
+            <div class="imagen-quienes">
+                <img src="./src/images/compañerismo.png" alt="Compañerismo">
+            </div>
+        </div>
+    </section>
